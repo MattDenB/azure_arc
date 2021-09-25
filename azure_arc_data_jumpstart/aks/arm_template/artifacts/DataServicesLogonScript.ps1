@@ -120,7 +120,8 @@ az customlocation create --name 'jumpstart-cl' `
                          --resource-group $env:resourceGroup `
                          --namespace arc `
                          --host-resource-id $connectedClusterId `
-                         --cluster-extension-ids $extensionId
+                         --cluster-extension-ids $extensionId `
+                         --kubeconfig
 
 # Deploying Azure Arc Data Controller
 Write-Host "Deploying Azure Arc Data Controller"
